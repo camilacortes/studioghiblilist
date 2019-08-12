@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Ghibli from './components/Ghibli';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='App'>
+        <div className='header-container'>
+          <h1 className='header-image'>Studio Ghibli Films</h1>
+        </div>
+        <div className='list-container'>
+          <Ghibli />
+        </div>
+        <div className='footer-container'>
+          <footer className='.footer-img'>
+            <img src='https://imgur.com/ei5Q0oy.jpg' alt='little icon' />
+          </footer>
+        </div>
+      </div>
+    </>
   );
 }
 
